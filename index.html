@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Button</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body>
+    <form id="the-button-login-form" class="displayed">
+      <div>
+        <label id="email-label" for="email"
+          >ENTER YOUR EMAIL AND LET <strong>THE BUTTON</strong> FIND YOUR
+          SOULMATE!</label
+        >
+      </div>
+      <div><input type="email" id="email" required /></div>
+      <div>
+        <button id="the-button" type="submit">
+          <img src="heart.png" alt="An icon of a heart." />
+        </button>
+      </div>
+    </form>
+
+    <div id="buffering-percentage-container">
+      We’re looking for your match:
+      <span id="buffering-percentage-number"></span>%
+      <div id="buffering-percentage-bar-wrapper">
+        <div id="buffering-percentage-bar"></div>
+      </div>
+    </div>
+    <div id="best-match-description"></div>
+    <div id="best-match-percentage-container">
+      You are
+      <strong><span id="best-match-percentage-number"></span>%</strong>
+      compatible!
+      <div id="best-match-percentage-bar-wrapper">
+        <div id="best-match-percentage-bar"></div>
+      </div>
+    </div>
+  </body>
+</html>
